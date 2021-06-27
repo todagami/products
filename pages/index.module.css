@@ -1,0 +1,105 @@
+.index{
+    min-height: 1000px;
+    min-width: 1000px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .image{
+      width: 100%;
+  }
+.buttonGroup{
+    display: flex;
+    justify-content: center;
+    margin-top: -10px;
+}
+.button {
+    color: #000000;
+    display: inline-block;
+    width: 200px;
+    height: 30px;
+    text-align: center;
+    text-decoration: none;
+    background: #B3B3B3;
+  }
+  
+  .button:hover {
+    background-color: #555;
+    color: white;
+  }
+  .products{
+    padding-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .divider{
+      padding-top: 40px;
+      padding-left: 5px;
+      color: darkblue;
+  }
+  .productstobuygroup{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .productstobuy{
+      width: 100%;
+  }
+  .buttonOption{
+      padding-top: 30px;
+  }
+  .buttonOptionStyle{
+    color: #000000;
+    display: inline-block;
+    width: 150px;
+    height: 30px;
+    text-align: center;
+  }
+  .newProducts{
+    padding-top: 10px;
+    display: flex;
+    overflow-x: auto;
+  }
+  .partners{
+    padding-top: 50px;
+    width: 100%;
+    padding-bottom: 10px;
+  }
+  .partnerContainer{
+    border: solid 1px grey;
+    border-radius: 5px;
+    padding: 4px;
+  }
+  .partnerText{
+    color: darkblue;
+    padding: 10px;
+  }
+  .partnerContent{
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+  }
+  .item1{
+      background-color: mediumpurple;
+      grid-column: span 2;
+      padding:10px;
+      margin: 10px;
+  }
+  .item2{
+      background-color:darkseagreen;
+      grid-column: 3;
+      padding:10px;
+      margin: 10px;
+  }
+  .item3{
+      background-color: indianred;
+      grid-column: 4;
+      padding:10px;
+      margin: 10px;
+  }

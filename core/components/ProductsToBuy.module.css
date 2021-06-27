@@ -1,0 +1,27 @@
+.products{
+    padding:5px;
+    float: left;
+}
+.linkImg{
+    width: 150px;
+    height:200px;
+}
+.productName{
+    width: 150px;
+    text-align: center;
+}
+.productCost{
+    width: 150px;
+}
+.button{
+    width: 150px;
+    color: white;
+    background-color: mediumblue;
+    border-radius: 5px;
+}
+.box{
+    width: 160px;
+    border: solid 1px grey;
+    border-radius: 5px;
+    padding: 4px;
+}
