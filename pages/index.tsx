@@ -2,17 +2,34 @@ import Head from "next/head";
 import Image from "next/image";
 
 import MainLayout from "../core/layouts/MainLayout";
-
+import {get} from "lodash"
 import styles from "./index.module.css";
 import {plusDivs} from "../utils"
 import Products from "../core/components/Products";
 import ProductsToBuy from "../core/components/ProductsToBuy"
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Box from "@material-ui/core/Box";
+import axios from "axios";
 const Index = () => {
+  const [article, setArticle] = useState(null);
+  useEffect(()=>{
+axios
+.get("https://api.stdio.vn/articles/@3DMgG1")
+.then((res)=>{
+  console.log(res.data);
+  setArticle(res.data);
+})
+.catch((err)=>{
+
+})
+  },[]);
   return (
     <MainLayout>
       <div className={styles.index}>
+        {/* <h1>{!!article&&article.title}</h1> */}
+        <h1>{get(article,"title", "")}</h1>
+      {/* <p>{!!article&&!!article.categories&&article.categories[0].name}</p> */}
+      <p>{get(article,'categories[0].name')}</p>
         <div className={styles.banner}>
           <div className={styles.image}>
             <div className='mySlides' style={{backgroundImage: `url("https://64.media.tumblr.com/dd001ffeb4225505ed8cd6d4e616e1c7/tumblr_oxxlqow7qI1qhttpto3_1280.jpg")`,height:300,width:'100%'}}>
